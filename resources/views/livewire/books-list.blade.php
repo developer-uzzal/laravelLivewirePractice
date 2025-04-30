@@ -1,7 +1,7 @@
 <div>
     <div class="container">
         <div class="row">
-            <div class="col-12 mb-3">
+            <div class="col-md-12 mb-3">
                 <input type="text" wire:model.live.debounce.500ms="search" placeholder="Search" class="form-control">
             </div>
 
@@ -62,6 +62,13 @@
         <div class="col-12 mt-4 d-flex justify-content-center">
             {{ $books->links('paginate.paginateTemplate') }}
         </div>
+
+
+
+        <livewire:send-event />
+        <livewire:recive-event />
+
+
     </div>
 </div>
 </div>
